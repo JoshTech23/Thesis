@@ -16,7 +16,7 @@
   </head>
   <body>
 
-   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="z-index: 10;">
 	   	 <a class="navbar-brand" href="#"><img src="image/logo-prot3.png" alt="Logo" style="width:120px; margin-right:15px;"></a>
 		   	<div class="container-fluid">
 			   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
 	<div class="banner">
 		<div class="banner-content">
 			<div class="banner-paragraph1">LEARN WEB</div>
-			<div class="banner-paragraph2">DEVELOPMENT Upadate</div>
+			<div class="banner-paragraph2">DEVELOPMENT</div>
 			<div class="banner-paragraph3">Welcome! we are here to Bring you the Most Advanced Web Development Tutorials so you can Learn Fast and easy.  </div>
 			  <div class="btn-outer">
 			 <button type="button" class="btn">READ More</button>
@@ -59,18 +59,15 @@
 	<div class="row">
 		<div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
 			<div class="img-1">
-				<img src="image/icon-2s.png" alt="Logo" style="height: 450px; width: 500px;">
+				<img src="image/icon-2s.png" alt="Logo" style="height: 450px; width: 500px; z-index: 1 !important">
 			</div>
 		</div>
 		<div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12">
 			<div class="mainecontent-1">
 				<div class="mainecontent-1-p1">
-					WEB
+					<span style="color: #FFD22D;"> WEB </span> <span style="color: #FF409E;"> DEVELOPEMENT </span>
 				</div>
-				<div class="mainecontent-1-p2">
-					DEVELOPEMENT
-				</div>
-				<div class="mainecontent-1-p3">
+					<div class="mainecontent-1-p3">
 					It’s hard to know the best way to learn coding, because there 
 					are a ton of resources out there. But right now, all you need is
  					the basics of  web development– a  general explanation with
@@ -175,15 +172,6 @@
 	display: inline-block;
 	font-size: 30px;
 	font-weight: bold;
-	color: #FFD22D;
-}
-.mainecontent-1-p2
-{
-	margin: 0px 10px;
-	display: inline-block;
-	font-size: 30px;
-	font-weight: bold;
-	color: #FF409E;
 }
 .mainecontent-1-p3
 {
@@ -194,6 +182,20 @@
 	width: 52%;
 	text-align: justify;
 	display: inline-block;
+}
+@media (max-width: 1024px)
+{
+ 	.container .img-1
+ 	{
+ 		margin: 50px 120px;
+ 		display: inline-block;
+ 	}
+ 	.mainecontent-1-p1
+ 	{
+ 		margin-top: 90px;
+ 		margin-left: 200px;
+ 		display: inline-block;
+ 	}
 }
 
 
@@ -223,11 +225,11 @@
 	   text-align: center;
 	   display: block;
 	}
-	.banner-paragraph2
+	/*.banner-paragraph2
 	{
 	 	text-align: center;
 	   display: block;
-	}
+	}*/
 	.banner-paragraph3
 	{
     	text-align: justify;
@@ -240,31 +242,6 @@
 	   display: inline-block;
 	   margin-left: 30px; 
 	}
-}
-
-@media (max-width: 1024px)
-{
- 	.container .img-1
- 	{
- 		margin: 50px 120px;
- 		display: inline-block;
- 	}
- 	.mainecontent-1-p1
- 	{
- 		margin-top: 90px;
- 		margin-left: 200px;
- 		display: inline-block;
- 	}
- 	.mainecontent-1-p2
- 	{
- 		margin-bottom:30px;
- 		display: inline-block;
- 	}
- 		.mainecontent-1-p2
- 	{
- 		margin: 0px 300px;
- 		display: inline-block;
- 	}
 }
 </style>
 </html>
