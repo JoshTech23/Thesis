@@ -58,19 +58,21 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
-			<div class="img-1">
-				<img src="image/icon-2s.png" alt="Logo" style="height: 450px; width: 500px;">
+			<div class="img1box">
+				<img class="img-1" src="image/icon-2s.png" alt="Logo">
 			</div>
 		</div>
-		<div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12">
+		<div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
 			<div class="mainecontent-1">
+					<div class="textbox">
 				<div class="mainecontent-1-p1">
 					WEB
 				</div>
 				<div class="mainecontent-1-p2">
 					DEVELOPEMENT
 				</div>
-				<div class="mainecontent-1-p3">
+					</div>
+					<div class="mainecontent-1-p3">
 					It’s hard to know the best way to learn coding, because there 
 					are a ton of resources out there. But right now, all you need is
  					the basics of  web development– a  general explanation with
@@ -159,14 +161,23 @@
 	font-weight: bold;
 	transition: 0.5s;
 }
-.container .img-1
+.container .img1box
 {
-	margin: 120px 0px;
+	margin: 120px 10px;
 	display: inline-block;
+}
+ .img-1
+{
+	height: 500px;
+	 width: 500px;
+}
+.textbox
+{
+	margin: 0px 10px;
 }
 .mainecontent-1
 {
-	margin: 140px 30px;
+	margin: 140px 10px;
 	display: inline-block;
 }
 .mainecontent-1-p1
@@ -187,7 +198,7 @@
 }
 .mainecontent-1-p3
 {
-	margin: 0px 10px;
+	margin: 8px 10px;
 	font-size: 15px;
 	font-weight: bolder;
 	color: #69B5FF;
@@ -240,30 +251,48 @@
 	   display: inline-block;
 	   margin-left: 30px; 
 	}
-}
 
-@media (max-width: 1024px)
-{
- 	.container .img-1
+  /* 	2nd Content*/
+
+	 .img1box .img-1
  	{
- 		margin: 50px 120px;
+ 		background-image: url("image/icon-10.png");
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		width: 100%;
+ 	}
+ 	.mainecontent-1
+ 	{
+      margin: auto 13px;
+      display: inline-block;
+ 	}
+ 		.textbox
+ 	{
+ 		margin: 0px 79px;
  		display: inline-block;
  	}
- 	.mainecontent-1-p1
+	.mainecontent-1-p1
  	{
- 		margin-top: 90px;
- 		margin-left: 200px;
+ 		margin-top: 20px;
+ 		margin-left: 220px;
  		display: inline-block;
+ 		font-size: 30px;
  	}
  	.mainecontent-1-p2
  	{
  		margin-bottom:30px;
- 		display: inline-block;
+ 	/*	margin-left: 100px;*/
+ 		display: inline-block !important;
+ 		font-size: 30px;
  	}
- 		.mainecontent-1-p2
+	.mainecontent-1-p3
  	{
- 		margin: 0px 300px;
+ 		margin: -20px 300px;
  		display: inline-block;
+ 		font-size: 25px;
+
  	}
 }
 </style>
